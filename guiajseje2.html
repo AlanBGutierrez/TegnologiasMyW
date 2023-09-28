@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const oracion = prompt("Por favor, ingrese una oración:");
+
+      if (oracion !== null && oracion !== "") {
+        const palabras = oracion.split(" ");
+
+        const cantidadPalabras = palabras.length;
+
+        alert(
+          `Oración ingresada: ${oracion}\nNúmero de palabras: ${cantidadPalabras}`
+        );
+      } else {
+        alert("No ha ingresado una oración válida.");
+      }
+    </script>
+  </body>
+</html>

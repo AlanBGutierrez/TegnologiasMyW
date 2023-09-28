@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <title>Numeros Separados Por Comas</title>
+  </head>
+  <body>
+    <script>
+      const numerosTexto = prompt(
+        "Ingrese una serie de números separados por comas:"
+      );
+      const numeros = numerosTexto
+        .split(",")
+        .map((numero) => parseFloat(numero.trim()));
+
+      if (numeros.some(isNaN)) {
+        alert("Por favor, ingrese números válidos.");
+      } else {
+        const numeroMaximo = Math.max(...numeros);
+        alert(`El número más grande ingresado es: ${numeroMaximo}`);
+      }
+    </script>
+  </body>
+</html>
