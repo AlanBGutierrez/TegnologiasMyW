@@ -9,7 +9,7 @@ const estatura = parseFloat(prompt("ingrese estatura en metros :"));
 const peso = parseFloat(prompt("ingrese su peso en kilogramos"));
 const imc = peso / (estatura * estatura);
 let categoria = "";
-if (imc < 18.5) {
+if (imc < 18.5)  {
   categoria = "bajo peso";
 } else if (imc >= 18.5 && imc <= 24.9) {
   categoria = "peso normal";
